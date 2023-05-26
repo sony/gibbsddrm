@@ -1,0 +1,65 @@
+data:
+    dataset: "FFHQ"
+    category: ""
+    image_size: 256
+    channels: 3
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 16
+    out_of_dist: True
+
+model:
+    type: "openai"
+    image_size: 256
+    num_channels: 128
+    num_res_blocks: 1
+    channel_mult: ""
+    learn_sigma: True
+    class_cond: False
+    use_checkpoint: False
+    num_heads: 4
+    num_head_channels: 64
+    num_heads_upsample: -1
+    use_scale_shift_norm: True
+    dropout: 0.0
+    resblock_updown: True
+    use_fp16: False
+    use_new_attention_order: False
+    var_type: 'learned_range'
+
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    num_diffusion_timesteps: 1000
+
+sampling:
+    batch_size: 2
+    last_only: True
+
+deblur:
+    sigma_0 : 0.02
+    timesteps : 100
+    etaA : 0.0
+    etaB : 0.9
+    etaC : 0.8
+    etaD : 0.8
+    kernel_type : motionblur
+    kernel_corruption : gauss_init
+    kernel_corruption_coef : 0.00000
+    iter_DDRM : 1
+    iter_Hupdate : 3
+    iter_optim : 500
+    lr_Hupdate : 1.0e-11
+    alg_Hupdate : "langevin"
+    reg_H_gamma : 1000.0
+    reg_H_type : norm
+    Hupdate_start : 0.7
+    resample_after_Hupdate : True
+    conv_type : same_interp
+
+logger:
+    enable_log: True
