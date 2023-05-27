@@ -14,9 +14,9 @@ Pre-trained diffusion models have been successfully used as priors in a variety 
 [Creative AI: Demos and Papers, Sony Group Corporation](https://sony.github.io/creativeai/)
 
 ## Authors
-Naoki Murata<sup>1</sup>, Koichi Saito<sup>1</sup>, Chieh-Hsin Lai<sup>1</sup>, Yuhta Takida<sup>1</sup>, Toshimitsu Uesaka<sup>1</sup>, Yuki Mitsufuji<sup>1</sup>, Stefano Ermon<sup>2</sup>
+Naoki Murata<sup>1</sup>, Koichi Saito<sup>1</sup>, Chieh-Hsin Lai<sup>1</sup>, Yuhta Takida<sup>1</sup>, Toshimitsu Uesaka<sup>1</sup>, Yuki Mitsufuji<sup>1,2</sup>, Stefano Ermon<sup>3</sup>
 
-<sup>1</sup> Sony Group Corporation, <sup>2</sup> Stanford University
+<sup>1</sup> Sony AI, <sup>2</sup> Sony Group Corporation,<sup>3</sup> Stanford University
 
 
 ## Prereqruisites
