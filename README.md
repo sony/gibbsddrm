@@ -76,5 +76,5 @@ If you find this work useful, please consider citing the paper:
 ```
 
 
-This implementation is besed on: 
+This implementation is based on: 
 [https://github.com/bahjat-kawar/ddrm/](https://github.com/bahjat-kawar/ddrm/)
